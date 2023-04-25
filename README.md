@@ -1,6 +1,8 @@
 # database-rider-timescaledb-issues
-
-Database rider cleans timescaledb internal tables during cleanAfter, which breaks all subsequent tests with following exception:
+Database rider cleans timescaledb internal tables during cleanAfter, which breaks all subsequent tests
+### How to reproduce: 
+`mvn clean test`
+### Exception
 ```java
 java.lang.RuntimeException: Could not create dataset for test 'testB'.
 	at com.github.database.rider.core.RiderRunner.runBeforeTest(RiderRunner.java:46) ~[rider-core-1.36.0.jar:na]
