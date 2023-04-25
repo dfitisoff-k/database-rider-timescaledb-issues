@@ -1,0 +1,4 @@
+cacheConnection: false
+properties:
+  schema: public
+  caseSensitiveTableNames: true
